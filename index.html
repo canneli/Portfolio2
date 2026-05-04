@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR" class="dark scroll-smooth">
+<html lang="en" class="dark scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -232,15 +232,15 @@
             </div>
             
             <div class="hidden md:flex items-center gap-8 bg-white/5 p-1 rounded-full border border-white/5">
-                <a href="#home" data-i18n="nav_home" class="hoverable px-5 py-2 rounded-full text-sm font-medium text-zinc-300 hover:text-white transition-all">Início</a>
-                <a href="#projects" data-i18n="nav_projects" class="hoverable px-5 py-2 rounded-full text-sm font-medium text-brand-400 bg-brand-500/10 border border-brand-500/20">Projetos</a>
+                <a href="#home" data-i18n="nav_home" class="hoverable px-5 py-2 rounded-full text-sm font-medium text-zinc-300 hover:text-white transition-all">Home</a>
+                <a href="#projects" data-i18n="nav_projects" class="hoverable px-5 py-2 rounded-full text-sm font-medium text-brand-400 bg-brand-500/10 border border-brand-500/20">Projects</a>
                 <a href="#branding" data-i18n="nav_design" class="hoverable px-5 py-2 rounded-full text-sm font-medium text-zinc-300 hover:text-white transition-all">Design</a>
             </div>
 
             <div class="relative flex flex-col items-end group/lang">
                 <button id="lang-btn" onclick="toggleLang()" class="hoverable flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 text-zinc-200 text-xs font-bold uppercase tracking-wider">
                     <i data-lucide="globe" class="w-4 h-4 text-brand-400"></i>
-                    <span id="current-lang-label">PT</span>
+                    <span id="current-lang-label">EN</span>
                 </button>
             </div>
         </div>
@@ -257,7 +257,7 @@
                   <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-400 opacity-75"></span>
                   <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-500"></span>
                 </span>
-                <span data-i18n="hero_badge">Disponível para novos projetos</span>
+                <span data-i18n="hero_badge">Available for new projects</span>
             </div>
             
             <h1 class="font-display font-bold text-6xl sm:text-8xl lg:text-9xl tracking-tighter text-white mb-8 leading-[0.9] reveal">
@@ -266,7 +266,7 @@
             </h1>
             
             <p data-i18n="hero_subtitle" class="reveal mt-6 max-w-2xl mx-auto text-lg sm:text-xl text-zinc-300 font-light leading-relaxed">
-                Transformando narrativas complexas em motion graphics de alta performance e identidade visual memorável.
+                Transforming complex narratives into high-performance motion graphics and memorable visual identities.
             </p>
             
             <div class="reveal mt-12 flex flex-col sm:flex-row items-center justify-center gap-6">
@@ -274,7 +274,7 @@
                     <div class="absolute inset-0 bg-brand-400 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
                     <span class="relative flex items-center gap-2 group-hover:text-white transition-colors">
                         <i data-lucide="play-circle" class="w-5 h-5"></i>
-                        <span data-i18n="hero_cta">Ver Portfólio</span>
+                        <span data-i18n="hero_cta">View Portfolio</span>
                     </span>
                 </a>
             </div>
@@ -286,11 +286,11 @@
             <div class="flex flex-col md:flex-row items-end justify-between mb-24 gap-6 border-b border-white/5 pb-8 reveal">
                 <div id="section-header">
                     <h2 class="font-display text-5xl md:text-6xl font-bold text-white mb-3" data-i18n="projects_header">Selected Works</h2>
-                    <p class="text-zinc-400 text-lg max-w-md border-l-2 border-brand-500/50 pl-4" data-i18n="projects_subheader">Produção audiovisual e edição cinematográfica.</p>
+                    <p class="text-zinc-400 text-lg max-w-md border-l-2 border-brand-500/50 pl-4" data-i18n="projects_subheader">A curated selection of projects focused on visual impact and retention.</p>
                 </div>
                 <button id="back-btn" onclick="showCategories()" class="hoverable hidden group flex items-center gap-2 px-6 py-3 rounded-full bg-zinc-900/80 border border-zinc-700 text-zinc-300 hover:text-white hover:border-brand-500 transition-all backdrop-blur-md">
                     <i data-lucide="arrow-left" class="w-4 h-4 group-hover:-translate-x-1 transition-transform"></i>
-                    <span data-i18n="btn_back">Voltar para Categorias</span>
+                    <span data-i18n="btn_back">Back to Categories</span>
                 </button>
             </div>
             <div id="dynamic-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 min-h-[400px]"></div>
@@ -308,12 +308,12 @@
                 <div>
                     <div class="flex items-center gap-4 mb-6">
                         <div class="w-12 h-px bg-brand-500"></div>
-                        <span class="text-brand-400 text-xs font-bold uppercase tracking-[0.3em]">Design Essencial</span>
+                        <span class="text-brand-400 text-xs font-bold uppercase tracking-[0.3em]" data-i18n="design_badge">Essential Design</span>
                     </div>
                     <h2 class="font-display text-5xl md:text-7xl font-bold text-white tracking-tight" data-i18n="design_title">Branding &<br>Strategy</h2>
                 </div>
                 <p class="text-zinc-400 text-lg md:text-xl leading-relaxed max-w-lg font-light" data-i18n="design_intro">
-                    Design não é apenas estética, é <span class="text-white font-medium italic border-b border-brand-500/50 pb-0.5">engenharia de percepção</span>. Elevando o posicionamento de marcas através de identidades visuais sofisticadas e intencionais.
+                    Design isn't just aesthetics; it's <span class='text-white font-medium italic border-b border-brand-500/50 pb-0.5'>perception engineering</span>. Elevating brand positioning through sophisticated and intentional visual identities.
                 </p>
             </div>
 
@@ -331,7 +331,7 @@
                                 <span class="tag-pill">Minimalism</span>
                             </div>
                             <h3 class="text-white font-display text-5xl md:text-6xl font-bold leading-none tracking-tight">Modul<span class="text-modularte-taupe">arte</span></h3>
-                            <p class="text-zinc-400 text-lg leading-relaxed font-light">Identidade visual baseada na interseção de linhas finas que criam uma ilusão de profundidade geométrica. Um design que reflete a precisão e o alto padrão da marcenaria sob medida.</p>
+                            <p class="text-zinc-400 text-lg leading-relaxed font-light" data-i18n="mod_desc">Visual identity based on the intersection of fine lines creating an illusion of geometric depth. A design that reflects the precision and high standard of custom woodwork.</p>
                             
                             <div class="pt-6 border-t border-white/10 flex items-center justify-between">
                                 <div class="flex gap-2">
@@ -340,7 +340,7 @@
                                     <div class="w-2 h-10 bg-modularte-light rounded-full"></div>
                                 </div>
                                 <a href="https://canneli.github.io/modularte/" target="_blank" class="hoverable group/btn flex items-center gap-3 text-white hover:text-modularte-sand transition-colors text-xs font-bold uppercase tracking-[0.2em]">
-                                    Acessar Manual da Marca
+                                    <span data-i18n="mod_link">Access Brand Manual</span>
                                     <div class="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center group-hover/btn:border-modularte-sand/50 group-hover/btn:bg-modularte-sand/10 transition-all">
                                         <i data-lucide="external-link" class="w-4 h-4"></i>
                                     </div>
@@ -441,7 +441,7 @@
                                 <span class="tag-pill">Gastronomy</span>
                             </div>
                             <h3 class="text-white font-matheus_serif text-5xl md:text-6xl font-bold leading-none">Matheus<br><span class="italic text-zinc-400">Fonseca</span></h3>
-                            <p class="text-zinc-400 text-lg leading-relaxed font-light">Identidade digital para chef profissional. O desafio exigia a fusão do aspecto rústico dos ingredientes mineiros com o minimalismo e refinamento exigidos pela alta gastronomia contemporânea.</p>
+                            <p class="text-zinc-400 text-lg leading-relaxed font-light" data-i18n="mat_desc">Digital identity for a professional chef. The challenge required merging the rustic aspect of regional ingredients with the minimalism and refinement demanded by contemporary high gastronomy.</p>
                             
                             <div class="pt-6 border-t border-white/10 flex items-center justify-between">
                                 <div class="flex -space-x-3">
@@ -450,7 +450,7 @@
                                     <div class="w-10 h-10 rounded-full bg-chef-dark border-2 border-[#030304] shadow-lg"></div>
                                 </div>
                                 <a href="https://canneli.github.io/matheus/" target="_blank" class="hoverable group/btn flex items-center gap-3 text-white hover:text-chef-gold transition-colors text-xs font-bold uppercase tracking-[0.2em]">
-                                    Explorar Projeto 
+                                    <span data-i18n="mat_link">Explore Project</span> 
                                     <div class="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center group-hover/btn:border-chef-gold/50 group-hover/btn:bg-chef-gold/10 transition-all">
                                         <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
                                     </div>
@@ -472,11 +472,11 @@
                                 <span class="tag-pill">Esthetics</span>
                             </div>
                             <h3 class="text-white font-matheus_serif text-5xl md:text-6xl font-bold leading-none italic">Angelina<br><span class="text-angel-copper not-italic">Pereira</span></h3>
-                            <p class="text-zinc-400 text-lg leading-relaxed font-light">Posicionamento de alto valor para especialista com 15 anos de mercado. O design foi concebido para o mercado europeu (Portugal), comunicando excelência, visagismo personalizado e luxo atemporal.</p>
+                            <p class="text-zinc-400 text-lg leading-relaxed font-light" data-i18n="ang_desc">High-value positioning for a specialist with 15 years in the market. The design was conceived for the European market (Portugal), communicating excellence, personalized visagism, and timeless luxury.</p>
                             
                             <div class="pt-6 border-t border-white/10">
                                 <a href="https://canneli.github.io/angelina/" target="_blank" class="hoverable group/btn flex items-center gap-3 text-white hover:text-angel-copper transition-colors text-xs font-bold uppercase tracking-[0.2em]">
-                                    Acessar Portfólio Oficial
+                                    <span data-i18n="ang_link">Access Official Portfolio</span>
                                     <div class="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center group-hover/btn:border-angel-copper/50 group-hover/btn:bg-angel-copper/10 transition-all">
                                         <i data-lucide="external-link" class="w-4 h-4"></i>
                                     </div>
@@ -620,14 +620,14 @@
             <div class="mt-8">
                 <a id="modal-external-link" href="#" target="_blank" class="hoverable inline-flex items-center gap-2 px-6 py-3 bg-zinc-900 rounded-full text-sm text-white border border-zinc-800">
                     <i data-lucide="external-link" class="w-4 h-4"></i>
-                    <span data-i18n="modal_open_original">Abrir link original</span>
+                    <span data-i18n="modal_open_original">Open original link</span>
                 </a>
             </div>
         </div>
     </div>
 
     <script>
-        let currentLang = localStorage.getItem('siteLang') || 'pt';
+        let currentLang = localStorage.getItem('siteLang') || 'en';
         let isLangOpen = false;
         let planetModal, langGrid;
 
@@ -652,32 +652,70 @@
         const segueOBaileVideos = [{ title: "Superação com João da Verde e Rosa", id: "2r_2mpd4uUA", type: "youtube" },{ title: "Vitinho Agita na Ilha da Gigóia", id: "MhaYlLIOo0g", type: "youtube" },{ title: "Felipe Ferreira: Bastidores", id: "9deIRMk93jA", type: "youtube" }];
 
         const categories = [
-            { id: 'modularte_moveis', title: 'Modularte Móveis', descriptions: { pt: 'Móveis Planejados 3D.' }, count: modularteVideos.length, icon: 'box', coverId: '1ag34jflUUdnEPKqGAf-ue2foUVs8K-bq', items: modularteVideos },
-            { id: 'autopecas_elite', title: 'Autopeças Elite', descriptions: { pt: 'Vendas e Peças Automotivas.' }, count: autoPecasVideos.length, icon: 'car', coverId: '12d9MTuBn-YQBsY22SEnDKWLCK2xrT9QB', items: autoPecasVideos },
-            { id: 'unianchieta', title: 'UNIANCHIETA', descriptions: { pt: 'Audiovisual acadêmico.' }, count: unianchietaVideos.length, icon: 'library', coverId: '1050T6hAHxUHwKzUa-yS9ZAX6_i7fQe5U', items: unianchietaVideos },
-            { id: 'nexhub', title: 'NexHub', descriptions: { pt: 'Estratégias digitais.' }, count: marketingVideos.length, icon: 'trending-up', coverId: '1X74WBhj2T8Te3HR4P5sNJGbYUYvP-Jct', items: marketingVideos },
-            { id: 'ory_clinica', title: 'Ory Clínica', descriptions: { pt: 'Saúde e estética.' }, count: oryVideos.length, icon: 'heart-pulse', coverId: '1qO0SVDmP--cx7LGgjQObjf_9T7CUvzGF', items: oryVideos },
-            { id: 'ai_clip', title: 'Videoclipe IA', descriptions: { pt: 'Produção gerada com Inteligência Artificial.' }, count: aiClipVideos.length, icon: 'bot', coverId: '15jjytHTftXpXYNIBPBHOE4PWl531BNph', items: aiClipVideos },
-            { id: 'aec_estetica', title: 'AeC Estética', descriptions: { pt: 'Beleza e cuidados.' }, count: aecVideos.length, icon: 'sparkles', coverId: '1D3YVAJV7InmdjK7Xq5sWfqHHxKRwqH0G', items: aecVideos },
-            { id: 'unigrande', title: 'UNIGRANDE', descriptions: { pt: 'Educacional e Institucional.' }, count: unigrandeVideos.length, icon: 'graduation-cap', coverId: '1Gke_0FzoiBpsE4sLtdNtzgbYygQtI08B', items: unigrandeVideos },
-            { id: 'vanessa_nutri', title: 'Vanessa Nutri', descriptions: { pt: 'Nutrição e Saúde.' }, count: vanessaVideos.length, icon: 'apple', coverId: '10iNS0EAZNJAVAQoVZo5CRdJOTw7-a4WN', items: vanessaVideos },
-            { id: 'caesb', title: 'CAESB', descriptions: { pt: 'Comunicação Hídrica.' }, count: caesbVideos.length, icon: 'droplets', coverType: 'image', coverUrl: 'https://www.politicadistrital.com.br/wp-content/uploads/2019/06/caesb-desconto.jpg', items: caesbVideos },
-            { id: 'segue_o_baile', title: 'Segue o Baile', descriptions: { pt: 'Eventos e Entrevistas.' }, count: segueOBaileVideos.length, icon: 'tv', coverId: '2r_2mpd4uUA', coverType: 'youtube', items: segueOBaileVideos },
-            { id: 'remaster_ia', title: 'Remaster IA', descriptions: { pt: 'Upscaling e tratamento.' }, count: 2, icon: 'wand-2', coverId: '1ClQPFQYwystqP6hIWSeZeANDeel1hjpk', items: [], specialType: 'comparison', videoOriginal: '070jjUxiiaY', videoRemaster: 'IKeYemyRtqU' }
+            { id: 'modularte_moveis', title: 'Modularte Móveis', descriptions: { pt: 'Móveis Planejados 3D.', en: '3D Custom Furniture.' }, count: modularteVideos.length, icon: 'box', coverId: '1ag34jflUUdnEPKqGAf-ue2foUVs8K-bq', items: modularteVideos },
+            { id: 'autopecas_elite', title: 'Autopeças Elite', descriptions: { pt: 'Vendas e Peças Automotivas.', en: 'Automotive Parts and Sales.' }, count: autoPecasVideos.length, icon: 'car', coverId: '12d9MTuBn-YQBsY22SEnDKWLCK2xrT9QB', items: autoPecasVideos },
+            { id: 'unianchieta', title: 'UNIANCHIETA', descriptions: { pt: 'Audiovisual acadêmico.', en: 'Academic Audiovisual.' }, count: unianchietaVideos.length, icon: 'library', coverId: '1050T6hAHxUHwKzUa-yS9ZAX6_i7fQe5U', items: unianchietaVideos },
+            { id: 'nexhub', title: 'NexHub', descriptions: { pt: 'Estratégias digitais.', en: 'Digital Strategies.' }, count: marketingVideos.length, icon: 'trending-up', coverId: '1X74WBhj2T8Te3HR4P5sNJGbYUYvP-Jct', items: marketingVideos },
+            { id: 'ory_clinica', title: 'Ory Clínica', descriptions: { pt: 'Saúde e estética.', en: 'Health and Aesthetics.' }, count: oryVideos.length, icon: 'heart-pulse', coverId: '1qO0SVDmP--cx7LGgjQObjf_9T7CUvzGF', items: oryVideos },
+            { id: 'ai_clip', title: 'Videoclipe IA', descriptions: { pt: 'Produção gerada com Inteligência Artificial.', en: 'AI-Generated Production.' }, count: aiClipVideos.length, icon: 'bot', coverId: '15jjytHTftXpXYNIBPBHOE4PWl531BNph', items: aiClipVideos },
+            { id: 'aec_estetica', title: 'AeC Estética', descriptions: { pt: 'Beleza e cuidados.', en: 'Beauty and Care.' }, count: aecVideos.length, icon: 'sparkles', coverId: '1D3YVAJV7InmdjK7Xq5sWfqHHxKRwqH0G', items: aecVideos },
+            { id: 'unigrande', title: 'UNIGRANDE', descriptions: { pt: 'Educacional e Institucional.', en: 'Educational and Institutional.' }, count: unigrandeVideos.length, icon: 'graduation-cap', coverId: '1Gke_0FzoiBpsE4sLtdNtzgbYygQtI08B', items: unigrandeVideos },
+            { id: 'vanessa_nutri', title: 'Vanessa Nutri', descriptions: { pt: 'Nutrição e Saúde.', en: 'Nutrition and Health.' }, count: vanessaVideos.length, icon: 'apple', coverId: '10iNS0EAZNJAVAQoVZo5CRdJOTw7-a4WN', items: vanessaVideos },
+            { id: 'caesb', title: 'CAESB', descriptions: { pt: 'Comunicação Hídrica.', en: 'Water Resource Communication.' }, count: caesbVideos.length, icon: 'droplets', coverType: 'image', coverUrl: 'https://www.politicadistrital.com.br/wp-content/uploads/2019/06/caesb-desconto.jpg', items: caesbVideos },
+            { id: 'segue_o_baile', title: 'Segue o Baile', descriptions: { pt: 'Eventos e Entrevistas.', en: 'Events and Interviews.' }, count: segueOBaileVideos.length, icon: 'tv', coverId: '2r_2mpd4uUA', coverType: 'youtube', items: segueOBaileVideos },
+            { id: 'remaster_ia', title: 'Remaster IA', descriptions: { pt: 'Upscaling e tratamento.', en: 'Upscaling and Treatment.' }, count: 2, icon: 'wand-2', coverId: '1ClQPFQYwystqP6hIWSeZeANDeel1hjpk', items: [], specialType: 'comparison', videoOriginal: '070jjUxiiaY', videoRemaster: 'IKeYemyRtqU' }
         ];
 
         const translations = {
             pt: {
                 nav_home: "Início", nav_projects: "Projetos", nav_design: "Design",
-                hero_badge: "Disponível para novos projetos", hero_cta: "Ver Portfólio", projects_header: "Selected Works", projects_subheader: "Uma curadoria de projetos focados em impacto visual e retenção.",
-                design_title: "Branding & Strategy", design_intro: "Design não é apenas o que se vê, mas o que se <span class='text-white font-bold italic underline decoration-brand-500 underline-offset-4'>sente</span>. Transformando conceitos em identidades visuais que comunicam autoridade e sofisticação.",
-                btn_back: "Voltar para Categorias", watch_now: "Assistir", modal_open_original: "Abrir link original"
+                hero_badge: "Disponível para novos projetos", 
+                hero_subtitle: "Transformando narrativas complexas em motion graphics de alta performance e identidade visual memorável.",
+                hero_cta: "Ver Portfólio", 
+                projects_header: "Selected Works", 
+                projects_subheader: "Uma curadoria de projetos focados em impacto visual e retenção.",
+                design_badge: "Design Essencial",
+                design_title: "Branding & Strategy", 
+                design_intro: "Design não é apenas estética, é <span class='text-white font-medium italic border-b border-brand-500/50 pb-0.5'>engenharia de percepção</span>. Elevando o posicionamento de marcas através de identidades visuais sofisticadas e intencionais.",
+                mod_desc: "Identidade visual baseada na interseção de linhas finas que criam uma ilusão de profundidade geométrica. Um design que reflete a precisão e o alto padrão da marcenaria sob medida.",
+                mod_link: "Acessar Manual da Marca",
+                mat_desc: "Identidade digital para chef profissional. O desafio exigia a fusão do aspecto rústico dos ingredientes mineiros com o minimalismo e refinamento exigidos pela alta gastronomia contemporânea.",
+                mat_link: "Explorar Projeto",
+                ang_desc: "Posicionamento de alto valor para especialista com 15 anos de mercado. O design foi concebido para o mercado europeu (Portugal), comunicando excelência, visagismo personalizado e luxo atemporal.",
+                ang_link: "Acessar Portfólio Oficial",
+                btn_back: "Voltar para Categorias", 
+                watch_now: "Assistir", 
+                modal_open_original: "Abrir link original",
+                footer_rights: "© 2024 Todos os direitos reservados.",
+                exclusive: "Exclusivo",
+                watch_channel: "Ver no Canal",
+                watch_now_btn: "Assistir Agora",
+                original: "Original"
             },
             en: {
                 nav_home: "Home", nav_projects: "Projects", nav_design: "Design",
-                hero_badge: "Available for new projects", hero_cta: "View Portfolio", projects_header: "Selected Works", projects_subheader: "A curated selection of projects focused on visual impact.",
-                design_title: "Branding & Identity", design_intro: "Design isn't just about visuals; it's about <span class='text-white font-bold italic'>feeling</span>. Transforming concepts into visual identities that communicate authority.",
-                btn_back: "Back to Categories", watch_now: "Watch", modal_open_original: "Open original link"
+                hero_badge: "Available for new projects", 
+                hero_subtitle: "Transforming complex narratives into high-performance motion graphics and memorable visual identities.",
+                hero_cta: "View Portfolio", 
+                projects_header: "Selected Works", 
+                projects_subheader: "A curated selection of projects focused on visual impact and retention.",
+                design_badge: "Essential Design",
+                design_title: "Branding & Strategy", 
+                design_intro: "Design isn't just aesthetics; it's <span class='text-white font-medium italic border-b border-brand-500/50 pb-0.5'>perception engineering</span>. Elevating brand positioning through sophisticated and intentional visual identities.",
+                mod_desc: "Visual identity based on the intersection of fine lines creating an illusion of geometric depth. A design that reflects the precision and high standard of custom woodwork.",
+                mod_link: "Access Brand Manual",
+                mat_desc: "Digital identity for a professional chef. The challenge required merging the rustic aspect of regional ingredients with the minimalism and refinement demanded by contemporary high gastronomy.",
+                mat_link: "Explore Project",
+                ang_desc: "High-value positioning for a specialist with 15 years in the market. The design was conceived for the European market (Portugal), communicating excellence, personalized visagism, and timeless luxury.",
+                ang_link: "Access Official Portfolio",
+                btn_back: "Back to Categories", 
+                watch_now: "Watch", 
+                modal_open_original: "Open original link",
+                footer_rights: "© 2024 All rights reserved.",
+                exclusive: "Exclusive",
+                watch_channel: "View on Channel",
+                watch_now_btn: "Watch Now",
+                original: "Original"
             }
         };
 
@@ -695,7 +733,10 @@
             });
             document.getElementById('current-lang-label').innerText = code.toUpperCase();
             showCategories();
-            toggleLang();
+            
+            if(!planetModal.classList.contains('pointer-events-none')){
+                toggleLang();
+            }
         }
 
         function showCategories() {
@@ -714,7 +755,7 @@
                     const card = document.createElement('div');
                     card.className = 'liquid-glass group rounded-3xl cursor-pointer flex flex-col reveal';
                     card.onclick = () => openCategory(cat.id);
-                    card.innerHTML = `<div class="h-56 w-full relative overflow-hidden bg-zinc-900/50"><img src="${thumb}" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100"><div class="absolute top-4 right-4 w-10 h-10 bg-black/40 backdrop-blur-md rounded-full flex items-center justify-center text-white z-20 group-hover:bg-brand-600 transition-all"><i data-lucide="${cat.icon}" class="w-5 h-5"></i></div></div><div class="p-8 flex-1 flex flex-col relative z-20"><h3 class="font-display text-2xl font-bold text-white mb-2 group-hover:text-brand-400 transition-colors">${cat.title}</h3><p class="text-zinc-500 text-sm mb-6 flex-1">${cat.descriptions[currentLang] || cat.descriptions['pt']}</p></div>`;
+                    card.innerHTML = `<div class="h-56 w-full relative overflow-hidden bg-zinc-900/50"><img src="${thumb}" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100"><div class="absolute top-4 right-4 w-10 h-10 bg-black/40 backdrop-blur-md rounded-full flex items-center justify-center text-white z-20 group-hover:bg-brand-600 transition-all"><i data-lucide="${cat.icon}" class="w-5 h-5"></i></div></div><div class="p-8 flex-1 flex flex-col relative z-20"><h3 class="font-display text-2xl font-bold text-white mb-2 group-hover:text-brand-400 transition-colors">${cat.title}</h3><p class="text-zinc-500 text-sm mb-6 flex-1">${cat.descriptions[currentLang] || cat.descriptions['en']}</p></div>`;
                     gridContainer.appendChild(card);
                 });
                 lucide.createIcons();
@@ -736,7 +777,7 @@
                 gridContainer.innerHTML = '';
                 if (category.specialType === 'comparison') {
                     gridContainer.className = '!flex !flex-col w-full';
-                    gridContainer.innerHTML = `<div class="w-full grid grid-cols-1 md:grid-cols-2 gap-8 reveal"><div class="liquid-glass p-6 rounded-3xl"><h3 class="text-xl font-bold text-zinc-400 mb-4">Original</h3><iframe width="100%" class="aspect-video rounded-2xl" src="https://www.youtube.com/embed/${category.videoOriginal}" frameborder="0" allowfullscreen></iframe></div><div class="liquid-glass p-6 rounded-3xl"><h3 class="text-xl font-bold text-brand-300 mb-4">Remaster IA</h3><iframe width="100%" class="aspect-video rounded-2xl" src="https://www.youtube.com/embed/${category.videoRemaster}" frameborder="0" allowfullscreen></iframe></div></div>`;
+                    gridContainer.innerHTML = `<div class="w-full grid grid-cols-1 md:grid-cols-2 gap-8 reveal"><div class="liquid-glass p-6 rounded-3xl"><h3 class="text-xl font-bold text-zinc-400 mb-4">${translations[currentLang].original}</h3><iframe width="100%" class="aspect-video rounded-2xl" src="https://www.youtube.com/embed/${category.videoOriginal}" frameborder="0" allowfullscreen></iframe></div><div class="liquid-glass p-6 rounded-3xl"><h3 class="text-xl font-bold text-brand-300 mb-4">Remaster IA</h3><iframe width="100%" class="aspect-video rounded-2xl" src="https://www.youtube.com/embed/${category.videoRemaster}" frameborder="0" allowfullscreen></iframe></div></div>`;
                 } else {
                     gridContainer.className = 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8';
                     category.items.forEach(video => {
@@ -755,12 +796,12 @@
                                 <div class="w-14 h-14 rounded-full bg-zinc-800 text-white flex items-center justify-center mb-3 border border-white/10 group-hover:scale-110 transition-transform">
                                     <i data-lucide="lock" class="w-5 h-5"></i>
                                 </div>
-                                <span class="text-[10px] font-bold uppercase tracking-widest text-zinc-400 group-hover:text-white transition-colors">Exclusivo</span>
-                                <span class="text-[8px] text-zinc-500 mt-1 uppercase tracking-widest border border-zinc-700 px-2 py-0.5 rounded-full mt-2 group-hover:border-white/30 group-hover:text-zinc-300">Ver no Canal</span>
+                                <span class="text-[10px] font-bold uppercase tracking-widest text-zinc-400 group-hover:text-white transition-colors">${translations[currentLang].exclusive}</span>
+                                <span class="text-[8px] text-zinc-500 mt-1 uppercase tracking-widest border border-zinc-700 px-2 py-0.5 rounded-full mt-2 group-hover:border-white/30 group-hover:text-zinc-300">${translations[currentLang].watch_channel}</span>
                             </div>`;
                         } else if (video.highlight) {
                             extraClasses = 'ring-2 ring-chef-gold/50 shadow-[0_0_30px_rgba(212,175,55,0.15)] transform hover:-translate-y-2 group';
-                            badgeHTML = `<div class="absolute top-4 right-4 z-20 bg-chef-gold text-black text-[9px] font-bold uppercase tracking-[0.2em] px-3 py-1.5 rounded-full shadow-[0_0_20px_rgba(212,175,55,0.8)] animate-pulse flex items-center gap-1.5 border border-white/20"><i data-lucide="sparkles" class="w-3 h-3"></i> Assistir Agora</div>`;
+                            badgeHTML = `<div class="absolute top-4 right-4 z-20 bg-chef-gold text-black text-[9px] font-bold uppercase tracking-[0.2em] px-3 py-1.5 rounded-full shadow-[0_0_20px_rgba(212,175,55,0.8)] animate-pulse flex items-center gap-1.5 border border-white/20"><i data-lucide="sparkles" class="w-3 h-3"></i> ${translations[currentLang].watch_now_btn}</div>`;
                             overlayHTML = `<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 bg-chef-gold/20 backdrop-blur-sm">
                                 <div class="w-20 h-20 rounded-full bg-chef-gold text-black flex items-center justify-center shadow-[0_0_40px_rgba(212,175,55,0.8)] scale-90 group-hover:scale-100 transition-transform duration-500">
                                     <i data-lucide="play" class="w-8 h-8 ml-1"></i>
@@ -839,7 +880,10 @@
                 card.onclick = () => selectLanguage(lang.code);
                 langGrid.appendChild(card);
             });
-            showCategories();
+            
+            // Inicializa a linguagem (Inglês por padrão se nada estiver salvo)
+            selectLanguage(currentLang);
+            
             initScrollReveal();
             lucide.createIcons();
         });
